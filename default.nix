@@ -6,16 +6,16 @@ buildPythonPackage rec {
 
   # pypi source doesn't contain tests
   src = fetchFromGitHub {
-    owner = "martinrusev";
-    repo = "imbox";
-    rev = "73ef2267ee6f9af927c30be68009552fc2b0bdbe";
-    sha256 = "sha256-4qMchhpkZK3cmrtRSd18PLaz/vaIE+jBIjfJnI11SWk=";
+    owner = "liuhh666233";
+    repo = "imbox-origin";
+    rev = "accc60fad86a362b1782a3fe8996e707321ee199";
+    sha256 = "sha256-Fxw4VFteY3+XyOJh4Npgxc8wEhah7vpgXyx+vxRukHU=";
   };
 
-  patches = [
-    ./patches/Support-to-connect-163-mail-server.patch
-    ./patches/Support-to-parse-chinese-attachment-file-name.patch
-  ];
+  # patches = [
+  #   ./patches/Support-to-connect-163-mail-server.patch
+  #   ./patches/Support-to-parse-chinese-attachment-file-name.patch
+  # ];
 
   propagatedBuildInputs = [ chardet ];
 
