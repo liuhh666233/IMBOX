@@ -8,8 +8,8 @@ buildPythonPackage rec {
   src = fetchFromGitHub {
     owner = "liuhh666233";
     repo = "imbox-origin";
-    rev = "accc60fad86a362b1782a3fe8996e707321ee199";
-    sha256 = "sha256-Fxw4VFteY3+XyOJh4Npgxc8wEhah7vpgXyx+vxRukHU=";
+    rev = "2cae854dbd77e503d294fce7d5bcdb27e48719b5";
+    sha256 = "sha256-4JTV95kOe/mQEHANvtDu0RwlqnB/mg0yqdJx5HHcAjI=";
   };
 
   # patches = [
